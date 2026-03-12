@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "@/assets/logo.png";
 
 type PageName = "home" | "recipes" | "recipe" | "shop" | "product" | "about" | "contact";
 
@@ -39,15 +40,7 @@ const SiteHeader = ({ page, setPage, cartCount }: SiteHeaderProps) => {
         <div className="container flex items-center justify-between h-[76px]">
           {/* Logo */}
           <button onClick={() => setPage("home")} className="bg-transparent border-none cursor-pointer">
-            <div className="flex items-center gap-2.5">
-              <div className="w-[38px] h-[38px] bg-gradient-to-br from-sage to-sage-dark rounded-xl flex items-center justify-center text-xl">
-                🌿
-              </div>
-              <div>
-                <div className="font-display text-xl font-bold text-charcoal leading-none">Madame Baunilha</div>
-                <div className="text-[9px] tracking-[2px] text-muted-foreground font-medium">RECEITAS · PRODUTOS</div>
-              </div>
-            </div>
+            <img src={logo} alt="Madame Baunilha" className="h-12 w-auto" />
           </button>
 
           {/* Desktop Nav */}
