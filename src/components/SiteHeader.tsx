@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "@/assets/logo.png";
 
 type PageName = "home" | "recipes" | "recipe" | "shop" | "product" | "about" | "contact";
 
