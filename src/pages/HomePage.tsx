@@ -22,7 +22,7 @@ const HomePage = ({ setPage, setSelectedRecipe, setSelectedProduct }: HomePagePr
     <>
       {/* Hero */}
       <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-sage-dark via-brown to-charcoal">
-        <div className="absolute inset-0 bg-cover bg-center opacity-[0.18]" style={{ backgroundImage: "url(https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1600&q=60)" }} />
+        <div className="absolute inset-0 bg-cover bg-center opacity-[0.18]" style={{ backgroundImage: "url(/images/hero-bg.jpg)" }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, hsla(var(--sage-dark) / 0.75), hsla(var(--brown) / 0.5) 50%, hsla(var(--charcoal) / 0.88))" }} />
         <div className="absolute -top-[200px] -right-[200px] w-[600px] h-[600px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, hsla(var(--sage-light) / 0.13), transparent 70%)" }} />
         <div className="absolute -bottom-[100px] -left-[100px] w-[400px] h-[400px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, hsla(var(--terracotta) / 0.09), transparent 70%)" }} />
